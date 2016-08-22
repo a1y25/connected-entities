@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<div class="container">
+
+		<form action="">
+			<label for="">Search</label>
+			<input type="text">
+		</form>
+
+		<ul>
+			<li>connected entities one</li>
+			<li>connected entities two</li>
+			<li>connected entities three</li>
+		</ul>
+
+		<hr>
+
+		
+		<h1>Sorted Array</h1>
+
+		<div class="sortedone">
+			
+		</div><!-- end .sortedone -->
+
+	</div><!-- end .container -->
+
+	
+	<script src="jquery.js"></script>
+
+	<script>
+		
+		var colors = ["orange", "red", "blue", "green"];
+		colors.sort();
+
+		colors.forEach(function(color){
+			$('.sortedone').append(`<li>${color}</li>`);
+		});
+
+
+		var fruits = [
+			{id:1, name: "orange", price: 60},
+			{id:1, name: "grapes", price: 45},
+			{id:1, name: "banana", price: 75}
+		];
+
+		fruits.sort(function(a, b) {
+			return parseFloat(a.price) - parseFloat(b.price);
+		});
+
+		console.log(fruits);
+
+
+	</script>
+
+
+</body>
+</html>
